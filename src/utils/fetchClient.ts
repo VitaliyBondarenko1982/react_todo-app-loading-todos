@@ -38,7 +38,7 @@ function request<T>(
     });
 }
 
-export const client = {
+export default {
   get: <T>(url: string) => request<T>(url),
   post: <T>(url: string, data: any) => request<T>(url, 'POST', data),
   patch: <T>(url: string, data: any) => request<T>(url, 'PATCH', data),
